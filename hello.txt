@@ -1,6 +1,6 @@
-def sufuxer(value):
-    if (type(value)==int):
-      pass
+def byte_to_human(value):
+    if value?:
+    pass
     if value > 1024:   ###KiB
         if value > 1048576:    ##MiB
             if value> 1073741824:
@@ -9,7 +9,9 @@ def sufuxer(value):
             else:
                 scalefactor=1048576
                 suffix='MiB/s'
+        else:
+            scalefactor=1024
+            suffix='KiB/s'
     else:
         return "{:.1f} ".format(0)+'KiB/s'
-    return "{:.1f} ".format(value/scalefactor)
- 
+    return "{:.1f} ".format(value/scalefactor)+suffix
